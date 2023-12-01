@@ -1,0 +1,175 @@
+body {
+    text-align: center;
+    background-color: #feebf1;
+    margin: 0;
+}
+
+h1 { font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif; font-size: 30px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 1.8; } 
+h3 { font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; }
+p { font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 1.8; } 
+ 
+/* nav bar*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #eb589e;
+    display: inline-block;
+    
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #e3c6a4;
+    font-family: fantasy;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+li a:hover {
+    background-color: #e63b8e;
+}
+
+
+/*for the top of index*/
+
+#container {
+    display: flex;
+    width: 100%;
+}
+
+#left-half {
+    background-color: #8B4513;
+    width: 50%;
+    padding: 50px;
+    box-sizing: border-box;
+    color: white;
+    text-align: center; 
+}
+
+#left-half h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left; 
+}
+
+#left-half p {
+    font-size: large;
+    text-align: left; 
+}
+
+#right-half {
+    width: 50%; 
+}
+
+
+#logo {
+    margin-top: 2px;
+}
+
+/* for button */
+
+#button {
+    padding: 10px;
+    background-color: #e63b8e;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#button a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+
+/* for footer */
+
+#footer {
+    display: flex;
+    width: 100%;
+    background-color: #b29680;
+}
+
+#social-media {
+    text-align: center;
+}
+
+#social-images {
+    background-color: #feebf1;
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    color: #8c4801;
+    text-align: left;
+    position: relative;
+}
+
+#line {
+    position: absolute;
+    top: 0;
+    left: 75%;
+    height: 100%;
+    width: 3px;
+    background-color: #8c4801;
+    border: 2px solid #8c4801;
+ 
+}
+
+#social-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.7cm;
+}
+
+#social-images img {
+    width: 275;
+    height: 245;
+}
+
+#footer {
+    display: flex;
+}
+
+#social-media {
+    width: 40%;
+}
+
+#contact {
+    width: 60%;
+    text-align: center;
+}
+
+.contact-info {
+    display: inline-block;
+    margin: 10px; 
+    text-align: left;
+}
+
+.contact-info img {
+    margin-bottom: 5px; 
+}
+
+
+@media only screen and (max-width: 600px) {
+    #container {
+        flex-direction: column;
+    }
+
+    #left-half, #right-half {
+        width: 100%;
+    }
+
+    #right-half {
+        order: -1;
+    }
+}
+
+
