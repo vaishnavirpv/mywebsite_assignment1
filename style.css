@@ -144,8 +144,8 @@ li a:hover {
 }
 
 #social-images img {
-    width: 275;
-    height: 245;
+    width: 275px;
+    height: 245px;
 }
 
 #social-images img:hover {
@@ -338,7 +338,7 @@ li a:hover {
     }
 
     .flex-menu img {
-        width: 100px; 
+        width: 120px; 
         margin: 1%; 
         height: 150px;
         padding: 0 10%;
