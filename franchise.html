@@ -1,11 +1,42 @@
 <html>
 <head>
     <title>CreamStory Franchises</title>
+    <link rel="icon" href="Logo3.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+        h1 {
+            color: rgb(112, 10, 10);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        #left-half {
+            padding: 10%;
+            background-color: rgb(250, 136, 155);
+        }
+        #left-half p, #left-half h1 {
+            text-align: right;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px; 
+        }
+
+        button {
+            margin-top: 16px; 
+        }
+
+        .error-message {
+            color: red;
+            margin-top: 8px;
+        }
+    </style>
 </head>
 <body>
+    <!--Header-->
     <div id="logo">
-        <img src="my-logo.jpeg" alt="CreamStory Logo" width="210" height="100">
+        <a href="index.html"><img src="Logo3.png" alt="CreamStory Logo" width="250" height="120"></a>
     </div>
     <ul style="padding: 0 10%;">
         <li><a href="index.html">Home</a></li>
@@ -14,3 +45,113 @@
         <li><a href="location.html">Location</a></li>
         <li><a href="franchise.html">Franchise</a></li>
     </ul>
+    
+    <!--To top button-->
+    <div id="butterfly-to-top" onclick="scrollToTop()">
+        <img id="butterfly" src="butterfly.png" alt="Butterfly">
+    </div>
+
+    <div id="container" style="margin-top: 15px;">
+        <div id="right-half">
+            <img src="fran-image.jpg" alt="Good Food" width="100%" height="100%">
+        </div>
+        <div id="left-half">
+            <p style="font-family: cursive;">Indulge in Sweet Moments at CreamStory
+                Experience the Art of Frozen Delights</p>
+            <h1>Own a Scoop of Happiness with Our Ice Cream Franchise</h1>
+            <p style="font-size: large;">A Dessert Adventure Awaits - </p>
+            <p>Join CreamStory Today!</p>
+            <br>
+            <button id="button"><a href="#myForm">Sign-up Now</a></button>
+        </div>
+    </div>
+
+    <div>
+        <h1>Ready to own your CreamStory?</h1>
+        <p>Please complete the form below, and we will be in touch shortly.</p>
+    
+        <form id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <p id="name-error" class="error-message"></p>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <p id="email-error" class="error-message"></p>
+    
+            <label for="phone-number">Phone Number:</label>
+            <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <p id="phone-error" class="error-message"></p>
+    
+            <div class="checkbox-group">
+                <p style="font-size:medium;">Which District are you most Interested in?</p>
+                <label for="checkbox1">
+                    <input type="checkbox" id="checkbox1" name="Trichy"> Trichy
+                </label>
+    
+                <label for="checkbox2">
+                    <input type="checkbox" id="checkbox2" name="Coimbatore"> Coimbatore
+                </label>
+    
+                <label for="checkbox3">
+                    <input type="checkbox" id="checkbox3" name="Salem"> Salem
+                </label>
+    
+                <label for="checkbox4">
+                    <input type="checkbox" id="checkbox4" name="Madurai"> Madurai
+                </label>
+            </div>
+            <div style="margin-top: 16px;">
+                <label for="reason">Why do you want to join us?</label>
+                <input type="text" id="reason" name="reason" required>
+        
+                <label for="education-level">What is your Highest level of education:</label>
+                <select id="education-level" name="education-level">
+                    <option value="O/N Level">O/N Level</option>
+                    <option value="Diploma">Diploma</option>
+                    <option value="Bachelor's Degree">Bachelor's Degree</option>
+                    <option value="Master's Degree">Master's Degree</option>
+                    <option value="Ph.D">Ph.D.</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+    </div>
+    <div style="margin-bottom: 20px; overflow: hidden;">
+        <h1>Unlock the Sweet Success with CreamStory - Your Next Big Franchise Opportunity! &#128527</h1>
+        <img src="Give.jpeg" alt="staff" style="float: left; margin-right: 20px; width: 350px; margin-left: 18px;">
+        <p style="padding: 0 6%;">Experience remarkable year-over-year growth with CreamStory, the leading name in the dessert franchise segment. In a time where mega-corporate chains are losing their charm, CreamStory is redefining the landscape of dessert franchises. We invite entrepreneurs to join our family and enjoy the benefits of a streamlined operation, unparalleled support, and a lifestyle-friendly business model.&#128524
+
+            As the dessert franchise category takes the lead in the culinary industry, CreamStory stands out as a truly family-oriented franchise. Our establishments become community hubs for business rendezvous, family gatherings, and delightful weekend brunches.&#128586 With national chains fading away, CreamStory emerges as the community's favorite.
+            
+            Over the years, CreamStory has honed the dessert business model, offering operators attractive hours from 10 AM to 2 AM, flexible lifestyle benefits, a simplified operational approach, and a low-risk, high-reward venture.&#128518 But our commitment to excellence doesn't stop there - the CreamStory team continues to innovate, ensuring our franchisees are well-positioned for enduring success.
+            
+            Today, consumer preferences lean toward community-driven dining experiences, and CreamStory offers franchisees a unique chance to meet that demand. Become a part of one of the few family-owned-and-operated dessert franchises in the industry - a recipe for sweet success!&#127882</p>
+        <button id="button"><a href="#myForm">Sign-up Now</a></button>
+    </div>
+
+    <!--Footer-->
+    <div id="footer">
+        <div id="social-media">
+            <h3>Follow us on Social Media for regular updates!! &#128513</h3> 
+            <a href="https://www.instagram.com/creamstory_official?hl=en" target="_blank"><img src="instagram.png" alt="Instagram" width="150px" height="150px"></a>
+            <a href="https://www.facebook.com/creamstory" target="_blank"><img src="facebook.png" alt="Facebook" width="150px" height="150px" ></a>
+        </div>
+        
+        <div id="contact">
+            <div class="contact-info">
+                <h3>Contact Us: &#128526</h3>
+                <br>
+                <img src="telephone-call.png" alt="Telephone No." width="70px" height="70px">
+                <h4>+91 97908 76610</h4>
+            </div>
+
+            <div class="contact-info">
+                <img src="mail.png" alt="Email Id:" width="70px" height="70px">
+                <h4>Creamstorychennai@gmail.com</h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

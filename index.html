@@ -1,11 +1,14 @@
 <html>
 <head>
     <title>CreamStory Home</title>
+    <link rel="icon" href="Logo3.png" type="image/png">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
+    <!--Header-->
     <div id="logo">
-        <img src="my-logo.jpeg" alt="CreamStory Logo" width="210" height="100">
+        <a href="index.html"><img src="Logo3.png" alt="CreamStory Logo" width="250" height="120"></a>   
     </div>
     <ul style="padding: 0 10%;">
         <li><a href="index.html">Home</a></li>
@@ -14,10 +17,15 @@
         <li><a href="location.html">Location</a></li>
         <li><a href="franchise.html">Franchise</a></li>
     </ul>
+
+    <!--To top button-->
+    <div id="butterfly-to-top" onclick="scrollToTop()">
+        <img id="butterfly" src="butterfly.png" alt="Butterfly">
+    </div>
     
-    <div id="container">
+    <div id="container" style="margin-top: 15px;">
         <div id="left-half" style="padding: 10%;">
-            <h1>AN. UNTOLD. STORY. OF. CREAMS.</h1>
+            <h1 style="color: azure;">AN. UNTOLD. STORY. OF. CREAMS.</h1>
             <p style="font-size: large;">Indulge in the moment of happiness and satisfaction. Swing your way into our fun ambience. Late night cravings? We've got you covered! Open till 2am. Try out our Dream Cakes and you will be dreaming about it everyday! &#x1F61C</p>
             <br>
             <button id="button"><a href="menu.html">Look at our Menu</a></button>
@@ -46,27 +54,28 @@
         <image src="Post05.jpeg"></image>
         <image src="Post06.jpeg"></image>
         <image src="Post07.jpeg"></image>
-        <image src="Post08.jpeg"></image>
+        <image src="Post09.jpg"></image>
     </div>
     
+    <!--Footer-->
     <div id="footer">
         <div id="social-media">
             <h3>Follow us on Social Media for regular updates!! &#128513</h3> 
-            <a href="https://www.instagram.com/creamstory_official?hl=en"><img src="instagram.png" alt="Instagram" width="150px" height="150px"></a>
-            <a href="https://www.facebook.com/creamstory"><img src="facebook.png" alt="Facebook" width="150px" height="150px" ></a>
+            <a href="https://www.instagram.com/creamstory_official?hl=en" target="_blank"><img src="instagram.png" alt="Instagram" width="150px" height="150px"></a>
+            <a href="https://www.facebook.com/creamstory" target="_blank"><img src="facebook.png" alt="Facebook" width="150px" height="150px" ></a>
         </div>
         
         <div id="contact">
             <div class="contact-info">
                 <h3>Contact Us: &#128526</h3>
                 <br>
-                <img src="telephone-call.png" alt="Telephone No." width="30px" height="30px">
-                <p>+91 97908 76610</p>
+                <img src="telephone-call.png" alt="Telephone No." width="70px" height="70px">
+                <h4>+91 97908 76610</h4>
             </div>
 
             <div class="contact-info">
-                <img src="mail.png" alt="Email Id:" width="30px" height="30px">
-                <p>Creamstorychennai@gmail.com</p>
+                <img src="mail.png" alt="Email Id:" width="70px" height="70px">
+                <h4>Creamstorychennai@gmail.com</h4>
             </div>
         </div>
     </div>
